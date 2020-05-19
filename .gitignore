@@ -1,17 +1,13 @@
-# Intellij
-.idea
-*.iml
-*.iws
-
-# Mac
-.DS_Store
-
-# node
-node_modules
-npm-debug.log
-
-# other
-# dist/
-# !dist/*.html
-
-java/**/*.java
+server/logs/
+server/npm-debug.log
+server/yarn-error.log
+server/node_modules/
+server/package-lock.json
+server/yarn.lock
+server/coverage/
+server/.idea/
+server/.DS_Store
+server/*.sw*
+server/*.un~
+server/.nyc_output/
+test/node_modules/
