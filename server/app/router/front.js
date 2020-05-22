@@ -2,6 +2,6 @@
 
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/front/index', controller.front.welcome.index);
-  router.get('/front/home', controller.front.home.index);
+  router.get('/front/test', controller.front.home.index);
+  router.get('/front/getArticleList', controller.front.getArticleList.index);
 };
