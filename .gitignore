@@ -11,3 +11,4 @@ server/*.sw*
 server/*.un~
 server/.nyc_output/
 test/node_modules/
+admin/node_modules/
