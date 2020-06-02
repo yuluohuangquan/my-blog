@@ -39,6 +39,7 @@ class Test extends React.Component<MainProps, MainState> {
   };
 
   query = () => {
+    window.console.log(process.env);
     axios.get(testApi).then((res: any) => {
       this.props.query(res);
     });

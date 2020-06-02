@@ -1,6 +1,6 @@
 let reqPrefix = "http://localhost:7001";
 
-if (process.env.BABEL_ENV === "development") {
+if (process.env.NODE_ENV === "production") {
   reqPrefix = "https://apiblog.jspang.com";
 }
 /**
