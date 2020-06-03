@@ -1,8 +1,9 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import Login from "../components/login";
 import Home from "../components/home";
+import MenuList from '../components/menuList';
 import Test from "../components/test";
 import Translate from "../components/translate";
 
@@ -10,13 +11,14 @@ import Header from "../components/header";
 import Sider from "../components/sider";
 
 const router = (
-  <Switch>
+  <>
     <Route path="/login" component={Login} />
     <Route path="/home" component={Home} />
+    <Route path="/menuList" component={MenuList} />
     <Route path="/test" component={Test} />
     <Route path="/translate" component={Translate} />
     <Route path="/" exact component={Login} />
-  </Switch>
+  </>
 );
 
 function Main() {

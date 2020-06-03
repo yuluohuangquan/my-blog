@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import "./axios/interceptors";
 
 import Routers from "./router";
@@ -13,7 +13,9 @@ function Main() {
   return (
     <Provider store={store}>
       <Router>
-        <Routers />
+        <Switch>
+          <Routers />
+        </Switch>
       </Router>
     </Provider>
   );

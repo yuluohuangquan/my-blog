@@ -11,7 +11,7 @@ export default function Container(props: any) {
         <Breadcrumb.Item href="/home">
           <HomeOutlined />
         </Breadcrumb.Item>
-        <Breadcrumb.Item href="/login">
+        <Breadcrumb.Item href="/home">
           <UserOutlined />
           <span>Application List</span>
         </Breadcrumb.Item>
