@@ -5,4 +5,5 @@
  */
 module.exports = app => {
   require('./router/front')(app);
+  require('./router/test')(app);
 };
