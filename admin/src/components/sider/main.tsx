@@ -21,15 +21,14 @@ export default function Sider() {
       className={css.sider}
       onClick={handleClick}
       style={{ width: 260 }}
-      defaultSelectedKeys={["home"]}
-      // defaultOpenKeys={["sub1"]}
+      defaultSelectedKeys={[]}
       mode="inline"
     >
-    {
-      menuList.map(item => {
-        return <Menu.Item key={item.key} onClick={() => changeTab(item.key)}>{item.title}</Menu.Item>;
-      })
-    }
+      {
+        menuList.map(item => {
+          return <Menu.Item key={item.key} onClick={() => changeTab(item.key)}>{item.title}</Menu.Item>;
+        })
+      }
     </Menu>
   );
 }
