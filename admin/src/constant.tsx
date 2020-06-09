@@ -16,6 +16,10 @@ export const menuList = [
         title: '文章管理',
     },
     {
+        key: 'features',
+        title: '功能管理',
+    },
+    {
         key: 'translate',
         title: '翻译',
     },
