@@ -27,21 +27,13 @@ module.exports = appInfo => {
     client: {
       host: '138.128.218.122',
       port: '3306',
-      user: 'root',
-      password: '0ae7dafdfa08b4d4',
+      user: 'react_blog',
+      password: '151872yudi',
       database: 'react_blog',
     },
     app: true,
     agent: false,
   };
-
-  // client: {
-  //   host: 'localhost',
-  //   port: '3306',
-  //   user: 'sunyu',
-  //   password: '12345678',
-  //   database: 'react_blog',
-  // },
 
   config.security = {
     scrf: {
