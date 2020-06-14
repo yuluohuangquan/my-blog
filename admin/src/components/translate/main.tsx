@@ -22,7 +22,7 @@ export default function Translate() {
     translateList = [];
     let list: any = null;
     list = [];
-    translateValue.split(/\n/).map((item, index) => {
+    translateValue.split(/\n/).forEach((item, index) => {
       translateList.push(
         `"${keyTitle}${item
           .toLocaleUpperCase()

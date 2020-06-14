@@ -19,11 +19,11 @@ export const columns = [
     {
         title: '操作',
         key: 'action',
-        render: (text: any, record: any) => {
-            return <>
-                <a>Invite {record.name}</a>
-                <a>Delete</a>
-            </>
+        render: (_text: any) => {
+            return <div>
+                <a>{'删除'}</a>
+                <a>{'修改'}</a>
+            </div>
         },
     },
 ];
