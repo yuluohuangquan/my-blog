@@ -15,7 +15,7 @@ export default function Sider() {
   }, []);
 
   const handleClick = (e: any) => {
-    window.console.log("click ", e, window.location);
+    setSelectKey(e.key);
   };
 
   const changeTab = (key: string) => {

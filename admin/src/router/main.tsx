@@ -8,6 +8,7 @@ import Test from "../components/test";
 import Translate from "../components/translate";
 import Features from '../components/features';
 import Article from '../components/article';
+import UserList from '../components/userList';
 
 import Header from "../components/header";
 import Sider from "../components/sider";
@@ -19,6 +20,7 @@ const router = (
     <Route path="/menuList" component={MenuList} />
     <Route path="/features" component={Features} />
     <Route path="/article" component={Article} />
+    <Route path="/user" component={UserList} />
     <Route path="/test" component={Test} />
     <Route path="/translate" component={Translate} />
     <Route path="/" exact component={Login} />
