@@ -24,20 +24,20 @@ module.exports = appInfo => {
   };
 
   config.mysql = {
-    // client: {
-    //   host: '138.128.218.122',
-    //   port: '3306',
-    //   user: 'react_blog',
-    //   password: '151872yudi',
-    //   database: 'react_blog',
-    // },
     client: {
-      host: 'localhost',
+      host: '138.128.218.122',
       port: '3306',
-      user: 'sunyu',
-      password: '12345678',
+      user: 'react_blog',
+      password: '151872yudi',
       database: 'react_blog',
     },
+    // client: {
+    //   host: 'localhost',
+    //   port: '3306',
+    //   user: 'sunyu',
+    //   password: '12345678',
+    //   database: 'react_blog',
+    // },
     app: true,
     agent: false,
   };
