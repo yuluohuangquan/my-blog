@@ -24,6 +24,10 @@ export const menuList = [
         title: '翻译',
     },
     {
+        key: 'getrich',
+        title: '暴富',
+    },
+    {
         key: 'test',
         title: '测试',
     },

@@ -69,10 +69,11 @@ class MainController extends Controller {
     let sql = '';
     if (pagesize === '0' || pagenumber === '0') {
       sql =
-        'SELECT date, num1, num2, num3, num4, num5, num6, num7 FROM daletou';
+        'SELECT date, num1, num2, num3, num4, num5, num6, num7 FROM daletou ORDER BY Id ASC';
     } else {
-      sql = `SELECT date, num1, num2, num3, num4, num5, num6, num7 FROM daletou
-      LIMIT ${(parseInt(pagesize) - 1) * parseInt(pagenumber)} , ${parseInt(pagesize) * parseInt(pagenumber)}`;
+      sql = `SELECT date, num1, num2, num3, num4, num5, num6, num7 FROM daletou LIMIT
+      ${(parseInt(pagesize) - 1) * parseInt(pagenumber)} ,
+      ${parseInt(pagesize) * parseInt(pagenumber)} ORDER BY Id ASC`;
     }
     let result = await this.app.mysql.query(sql);
     this.ctx.body = { data: result };

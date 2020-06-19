@@ -6,5 +6,5 @@
 module.exports = app => {
   require('./router/backend')(app);
   require('./router/front')(app);
-  require('./router/test')(app);
+  require('./router/features')(app);
 };
