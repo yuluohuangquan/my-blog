@@ -1,20 +1,64 @@
 import React from "react";
+import css from './styles/main.module.less';
+import Item from './overview';
 
 export default function Home() {
+
+  const MockList = [
+    {
+      title: '第一条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第2条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第3条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据5',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据4',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据3',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据2',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    },{
+      title: '第4条测试博客数据1',
+      time: '2020-07-01',
+      description: '详情是什么呢，我也不知道啊，是暗杀估价师图有好感个GVVG几句话环境就感觉化工厂1工程竣工超级兵好几遍好几遍好几遍韩剧'
+    }
+  ];
+
   return (
-    <div>
-      首页
-      <div>
-        <a href="https://juejin.im" target="view_window">掘金</a> <br />
-
-        <a href="https://www.freecodecamp.one/" target="view_window">自由学习</a> <br />
-        <a href="https://leetcode.com/" target="view_window">力扣</a> <br />
-        <a href="https://codepen.io/" target="view_window">代码在线编辑</a> <br />
-        <a href="http://www.alloyteam.com/" target="view_window">腾讯学习</a> <br />
-        <a href="https://www.docschina.org/" target="view_window">印象中文</a> <br />
-        <a href="https://learnku.com/" target="view_window">learnku</a> <br />
-
-      </div>
+    <div className={css.main}>
+      {
+        MockList.map(item => {
+          return <Item detail={item}/>
+        })
+      }
     </div>
   );
 }

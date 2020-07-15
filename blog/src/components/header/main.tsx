@@ -14,13 +14,13 @@ export default function Header() {
       <div className={css.content}>
         <div className={css.title}>
           <a onClick={goHome}>孙雨的博客</a>
-          <span>时间出真知</span>
+          <span>实践出真知</span>
         </div>
         <div className={css.titleList}>
           <div>前端学习</div>
           <div>最新技术</div>
           <div>算法学习</div>
-          <div>暴富秘诀</div>
+          <div>一夜暴富</div>
         </div>
       </div>
     </header>

@@ -1,7 +1,7 @@
 import React from "react";
-import css from "./styles/main.module.less";
+import css from "./styles/introduction.module.less";
 
-export default function Home() {
+export default function Introduction() {
   return (
     <div className={css.main}>
       <div className={css.content}>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { Chain, Introduction } from '../components/rightNav';
 import css from "./styles/main.module.less";
 
 import Home from "../components/home";
-
 import Header from "../components/header";
 
 const router = (
@@ -20,7 +20,13 @@ function Main() {
     <>
       <Header />
       <div className={css.main}>
-        {router}
+        <div className={css.content}>
+          {router}
+        </div>
+        <div className={css.side}>
+          <Introduction />
+          <Chain />
+        </div>
       </div>
     </>
   );

@@ -1,2 +1,3 @@
-import RightNav from './main';
-export default RightNav;
+import Introduction from './introduction';
+import Chain from './chain';
+export { Introduction, Chain };
