@@ -5,10 +5,12 @@ import css from "./styles/main.module.less";
 
 import Home from "../components/home";
 import Header from "../components/header";
+import Detail from "../components/detailPage";
 
 const router = (
   <Switch>
     <Route path="/home" component={Home} />
+    <Route path="/detail/:id" component={Detail} />
     <Route path="/" exact component={Home} />
   </Switch>
 );
