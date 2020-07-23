@@ -14,6 +14,7 @@ export default function Chain() {
                 <a href="https://www.docschina.org/" target="view_window">印象中文</a>
                 <a href="https://www.jb51.net/" target="view_window">脚本之家</a>
                 <a href="https://learnku.com/" target="view_window">learnku</a>
+                <a href="138.128.218.122:8888" target="view_window">宝塔</a>
             </div>
         </div>
     );

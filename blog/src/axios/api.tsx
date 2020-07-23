@@ -16,5 +16,12 @@ export const testApi = `${reqPrefix}/front/test`;
  * 获取大乐透的数据
  * @param
  */
-export const getDaLetou = ({ pagesize, pagenumber } : any) =>
+export const getDaLetou = ({ pagesize, pagenumber }: any) =>
   axios.get(`${reqPrefix}/features/getDaLetou/${pagesize}/${pagenumber}`);
+
+/**
+ * 首页文章列表接口
+ * @param
+ */
+export const getArticleList = () =>
+  axios.get(`${reqPrefix}/front/getArticleList`);
