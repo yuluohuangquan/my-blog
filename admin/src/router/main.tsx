@@ -8,6 +8,7 @@ import Test from "../components/test";
 import Translate from "../components/translate";
 import Features from '../components/features';
 import Article from '../components/article';
+import { AddArticle } from '../components/article';
 import UserList from '../components/userList';
 import Rich from "../components/rich";
 
@@ -21,11 +22,12 @@ const router = (
     <Route path="/menuList" component={MenuList} />
     <Route path="/features" component={Features} />
     <Route path="/article" component={Article} />
+    <Route path="/addArticle" component={AddArticle} />
     <Route path="/user" component={UserList} />
     <Route path="/test" component={Test} />
     <Route path="/getrich" component={Rich} />
     <Route path="/translate" component={Translate} />
-    {/* <Route path="/" exact component={Login} /> */}
+    <Route path="/" exact component={Login} />
   </>
 );
 
@@ -34,7 +36,7 @@ function Main() {
 
   return (
     <>
-      {pathname !== "/" && pathname !== "/login" && (
+      {pathname !== "/" && pathname !== "/login" && pathname !== "/addArticle" && (
         <>
           <Header />
           <Sider />
