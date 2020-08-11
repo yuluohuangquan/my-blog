@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useHistory } from "react-router-dom";
 import { Input, Button, Modal, Drawer } from "antd";
+import { MarkdownList } from './constant';
 import css from "./styles/add.module.less";
 
 const { TextArea } = Input;
@@ -72,9 +73,11 @@ export default function Main() {
         mask={false}
         width={640}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        {
+          MarkdownList.map(item => {
+            return <p className={css.drawerChlidren}>{item} <ReactMarkdown source={item} /></p>;
+          })
+        }
       </Drawer>
       {visible && (
         <Modal
