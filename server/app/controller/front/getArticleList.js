@@ -12,18 +12,17 @@ class MainController extends Controller {
       'article.title as title,' +
       'article.introduce as introduce,' +
       'FROM_UNIXTIME(article.addTime,"%Y-%m-%d" ) as addTime,' +
-      'article.view_count as view_count ,' +
-      'article.introduce_html as introduce_html ,' +
-      'article.type_id as type ' +
+      'article.view_count as viewCount ,' +
+      'article.introduce_html as introduceHtml ,' +
+      'article.type_id as type ,' +
+      'article.is_draft as isDraft ' +
       'FROM article LEFT JOIN type ON article.type_id = type.Id ' +
       'WHERE article.isTop = 0  AND article.type_id <> 99 ' +
       'ORDER BY article.id DESC';
     const resList = await this.app.mysql.query(sql);
-    const resType = await this.app.mysql.select('type');
 
     this.ctx.body = {
       list: resList,
-      type: resType,
     };
   }
 }
